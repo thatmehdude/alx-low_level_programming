@@ -1,5 +1,6 @@
 #include "main.h"
-/** _abs - prints absolute value of an integer
+/**
+ * _abs - prints absolute value of an integer
  * Return: Integer
  */
 int _abs(int i)
