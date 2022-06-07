@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*main - prints _putchar,
- * followed by a new line
- * Returns 0
+/*
+ * main- prints _putchar, followed by a new line
+ * Return: 0 if successful
  */
 int main(void)
 {
