@@ -2,18 +2,18 @@
 /** _abs - prints absolute value of an integer
  * Return: Integer
  */
-int _abs(int)
+int _abs(int i)
 {
-	if (n > 0)
+	if (i > 0)
 	{
-		return (n);
+		return (i);
 	}
-	else if (n < 0)
+	else if (i < 0)
 	{
-		return (-n);
+		return (-i);
 	}
 	else
 	{
-		return (n);
+		return (i);
 	}
 }
