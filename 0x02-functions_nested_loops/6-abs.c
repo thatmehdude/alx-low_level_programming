@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _abs - prints absolute value of an integer
+ * @i: this is the parameter
  * Return: Integer
  */
 int _abs(int i)
