@@ -8,8 +8,8 @@
  */
 void more_numbers(void)
 {
-	char = num;
-	int = lines;
+	char  num;
+	int  lines;
 
 	for (lines = 0; lines <= 9; lines++)
 	{
