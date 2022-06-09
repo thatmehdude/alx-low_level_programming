@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers from 1 to 100 
+ * main - prints numbers from 1 to 100
  * while replacing multiples of 3 with fizz,
  * multiples of 5 with buzz, and multipes of both 3 and 5 with fizzbuzz
  * followed by a new line
@@ -25,6 +25,7 @@ int main(void)
 		{
 			printf(" FizzBuzz");
 		}
+		else if (i == 1)
 		else
 		{
 			printf(" %d", i);
