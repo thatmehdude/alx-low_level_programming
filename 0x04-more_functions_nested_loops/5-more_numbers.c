@@ -11,7 +11,7 @@ void more_numbers(void)
 	char = num;
 	int = lines;
 
-	for (lines = '0'; lines <= '9'; lines++)
+	for (lines = 0; lines <= 9; lines++)
 	{
 		for (num = 0; num <= 14; num++)
 		{
