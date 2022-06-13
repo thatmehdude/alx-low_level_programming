@@ -1,6 +1,7 @@
 #include "main.h"
 
-/**swap - resets the value of two integers
+/**
+ * swap - resets the value of two integers
  * @a: integer a
  * @b: integer b
  * Return: 0 success
