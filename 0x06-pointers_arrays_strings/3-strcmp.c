@@ -2,7 +2,7 @@
 
 /**
  * _strcmp - compares to strings
- * @s: first string to compare
+ * @s1: first string to compare
  * @s2: second string to compare
  *
  * Retrun: less than 0 if s1 is less than s2,
