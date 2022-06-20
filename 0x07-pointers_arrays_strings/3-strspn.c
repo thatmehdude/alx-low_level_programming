@@ -2,30 +2,29 @@
 
 /**
  * _strspn - length of a prefix substring
- * @s: pointer
- * @accept: pointer
- * Return: 0
+ * @s: initial segment
+ * @accept: bytes
+ * Return: number of accepted bytes
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int length = 0;
-	int x = 0;
-	int y = 0;
+	unsigned int i, j, bool;
 
-	while (s[x] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		while (accept[y] != '\0')
+		bool = 0;
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (accept[y] == s[x])
-				length++;
-				y++;
+			if (s[i] == accept[j])
+			{
+				bool = 1;
+				break;
+			}
 		}
-		y = 0;
-		x++;
-		if (s[x] == ' ')
+		if (bool == 0)
 		{
 			break;
 		}
 	}
-	return (length);
+	return (i);
 }
