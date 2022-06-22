@@ -5,7 +5,7 @@
  * @root: number num
  * Return: reeturn
  */
-int find_root(int n)
+int find_root(int x, int root)
 {
 	if (root * root > x)
 		return (-1);
