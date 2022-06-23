@@ -11,7 +11,7 @@ int cmp(char *c1, char *c2);
 int escwild(char *c1, char *wild)
 {
 	if (*c1 == '\0')
-		return (cmp(c1, wid));
+		return (cmp(c1, wild));
 	return (cmp(c1, wild) || escwild(++c1, wild));
 }
 
