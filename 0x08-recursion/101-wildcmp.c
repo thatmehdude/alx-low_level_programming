@@ -4,11 +4,11 @@ int cmp(char *c1, char *c2);
 
 /**
  * escwild - escapes wild card
- * @ct: string 1
+ * @c1: string 1
  * @wild: string 2
  * Return: go through string 1 until match or '\0' is found
  */
-int wildcmp(char *s1, char *s2)
+int escwild(char *c1, char *wild)
 {
 	if (*c1 == '\0')
 		return (cmp(c1, wid));
