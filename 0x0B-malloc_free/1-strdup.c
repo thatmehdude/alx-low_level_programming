@@ -3,33 +3,31 @@
 #include <stdio.h>
 
 /**
- * *_strdup - return a pointer to a newly allocated space in memory
- * which contains a copy of thr string given as a parameter
- * @str: string
- * Return: memory pointer - mp
+ * *_strdup - copies string givn as parameter
+ * @str: string to duplicate
+ * Return: pointer to copied string(success), NULL(error)
  */
 char *_strdup(char *str)
 {
-	int i = 0, size = 0;
-	char *mp;
+	char *dup;
+	unsigned int i, len;
+
+	i = 0;
+	len = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	for (; str[size] != '0'; size++)
+	while (str[len])
+		len++;
 
-	mp = malloc(size * sizeof(str));
+	dup = malloc(sizeof(char) * (len + 1));
 
-	if (mp == 0)
-	{
+	if (dup == NULL)
 		return (NULL);
-	}
-	else
-	{
-		for (; 1 < size; i++)
-		{
-			mp[i] = str[i];
-		}
-	}
-	return (mp);
+
+	while ((dup[i] = str[i] != '\0')
+		i++;
+
+	return (dup);
 }
