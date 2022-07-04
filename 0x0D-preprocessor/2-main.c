@@ -1,14 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - points to program name
- * @argc: count of arguments in program
- * @argv: array of pointer to strings
- * Return: zero
+ * main - start of program
+ * Return: end of program
  */
 
-int main(int argc, char *argv[])
+int main(void)
 {
-	printf("Program's name is %s", argv[0]);
+	printf("%s\n", __FILE__);
 	return (0);
 }
